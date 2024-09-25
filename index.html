@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaManage - Manual de Marca y Login</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Tailwind Configuration */
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Header with Gradient -->
+    <header class="bg-gradient-to-r from-green-500 to-teal-400">
+        <div class="container mx-auto px-6 py-6 flex items-center">
+            <div class="flex items-center">
+                <i class="fas fa-pills text-3xl text-white mr-3"></i>
+                <span class="text-2xl font-bold text-white">PharmaManage</span>
+            </div>
+            <nav class="ml-auto">
+                <ul class="flex space-x-8">
+                    <li><a href="#login" class="text-white hover:text-gray-200 transition duration-300">Inicio de Sesión</a></li>
+                    <li><a href="#manual-de-marca" class="text-white hover:text-gray-200 transition duration-300">Manual de Marca</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-10">
+
+        <!-- Login Interface -->
+        <section id="login" class="bg-white p-10 rounded-3xl shadow-lg mb-16">
+            <h2 class="text-4xl font-semibold mb-8 text-teal-600 text-center">Inicio de Sesión</h2>
+            <form class="max-w-lg mx-auto space-y-8">
+                <div>
+                    <label for="username" class="block text-gray-700 text-lg mb-2">Usuario</label>
+                    <input type="text" id="username" name="username" class="w-full px-6 py-4 border border-gray-300 rounded-full focus:outline-none focus:ring-4 focus:ring-teal-200 transition duration-300" placeholder="Ingrese su usuario">
+                </div>
+                <div>
+                    <label for="password" class="block text-gray-700 text-lg mb-2">Contraseña</label>
+                    <input type="password" id="password" name="password" class="w-full px-6 py-4 border border-gray-300 rounded-full focus:outline-none focus:ring-4 focus:ring-teal-200 transition duration-300" placeholder="Ingrese su contraseña">
+                </div>
+                <div class="flex items-center justify-between">
+                    <button type="submit" class="w-full bg-teal-600 text-white px-6 py-4 rounded-full hover:bg-teal-700 transition duration-300">Entrar</button>
+                </div>
+                <div class="text-center">
+                    <a href="#" class="text-teal-600 hover:underline transition duration-300">¿Olvidaste tu contraseña?</a>
+                </div>
+            </form>
+        </section>
+
+        <!-- Manual de Marca -->
+        <section id="manual-de-marca" class="bg-white p-10 rounded-3xl shadow-lg">
+            <h2 class="text-4xl font-semibold mb-8 text-teal-600 text-center">Manual de Marca</h2>
+
+            <!-- Logo -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Logotipo</h3>
+                <div class="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-12">
+                    <div class="w-32 h-32 bg-teal-100 flex items-center justify-center rounded-full shadow-md">
+                        <!-- Placeholder for Logo Image -->
+                        <span class="text-teal-600 text-3xl font-bold">PM</span>
+                    </div>
+                    <div class="max-w-md">
+                        <p class="text-gray-700 text-lg">El logotipo de PharmaManage representa la salud y el bienestar que ofrecemos a nuestros clientes. Combina un ícono de píldora con una tipografía moderna y profesional.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Icono -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Icono</h3>
+                <div class="flex items-center space-x-12">
+                    <i class="fas fa-pills text-6xl text-teal-600"></i>
+                    <div class="max-w-lg">
+                        <p class="text-gray-700 text-lg">El icono principal es una píldora estilizada que simboliza el enfoque en la salud y el bienestar.</p>
+                        <a href="https://fontawesome.com/icons/pills?style=solid" target="_blank" class="text-teal-600 hover:underline transition duration-300">Fuente: FontAwesome</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paleta de Colores -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Paleta de Colores</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <!-- Color Primario -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-24 h-24 bg-gradient-to-r from-teal-500 to-green-500 rounded-lg shadow-md"></div>
+                        <p class="mt-4 text-center text-gray-700">Verde Primario: <span class="font-semibold">#16A34A</span></p>
+                    </div>
+                    <!-- Color Secundario -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-24 h-24 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-lg shadow-md"></div>
+                        <p class="mt-4 text-center text-gray-700">Amarillo Secundario: <span class="font-semibold">#F59E0B</span></p>
+                    </div>
+                    <!-- Color Neutro -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-24 h-24 bg-gradient-to-r from-gray-500 to-gray-700 rounded-lg shadow-md"></div>
+                        <p class="mt-4 text-center text-gray-700">Gris Neutro: <span class="font-semibold">#4B5563</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tipografía -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Tipografía</h3>
+                <div class="space-y-6">
+                    <div>
+                        <p class="text-lg font-semibold text-gray-700">Fuente Principal:</p>
+                        <p class="text-gray-700">Inter</p>
+                    </div>
+                    <div>
+                        <p class="text-lg font-semibold text-gray-700">Fuente Secundaria:</p>
+                        <p class="text-gray-700">Roboto</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-700">La tipografía seleccionada es moderna y legible, adecuada para interfaces de usuario y materiales de marketing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imágenes -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Imágenes</h3>
+                <p class="mb-8 text-gray-700 text-lg">Las imágenes utilizadas deben reflejar profesionalismo y confianza, enfocándose en productos farmacéuticos de calidad, personal capacitado y clientes satisfechos.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Placeholder for Image 1 -->
+                    <div class="w-full h-64 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Imagen 1</span>
+                    </div>
+                    <!-- Placeholder for Image 2 -->
+                    <div class="w-full h-64 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Imagen 2</span>
+                    </div>
+                    <!-- Placeholder for Image 3 -->
+                    <div class="w-full h-64 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Imagen 3</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Concepto y Lore -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Concepto y Lore</h3>
+                <p class="text-gray-700 mb-6 text-lg">
+                    PharmaManage nace de la dedicación por la salud y el bienestar, y la necesidad de proporcionar herramientas eficientes para la gestión de farmacias. Nuestro sistema está diseñado para simplificar las operaciones diarias, permitiendo a los farmacéuticos y al personal enfocarse en lo más importante: la atención y cuidado de sus clientes.
+                </p>
+                <p class="text-gray-700 mb-6 text-lg">
+                    La historia de PharmaManage comienza con un grupo de farmacéuticos y desarrolladores de software que unieron fuerzas para crear una solución integral que aborda los desafíos administrativos y operativos de las farmacias. Con una interfaz intuitiva y funcionalidades robustas, PharmaManage se convierte en el aliado perfecto para el crecimiento y éxito de cualquier negocio farmacéutico.
+                </p>
+                <p class="text-gray-700 text-lg">
+                    Nuestro objetivo es brindar una herramienta confiable y fácil de usar que permita a las farmacias gestionar sus operaciones de manera eficiente, mejorar la atención al cliente y optimizar el control financiero. Con PharmaManage, cada farmacia puede centrarse en lo que realmente importa: la salud y bienestar de sus clientes.
+                </p>
+            </div>
+
+            <!-- Valores de la Marca -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Valores de la Marca</h3>
+                <ul class="list-disc list-inside space-y-4 text-gray-700 text-lg">
+                    <li><span class="font-semibold">Compromiso:</span> Nos dedicamos a ofrecer las mejores soluciones para la gestión de farmacias.</li>
+                    <li><span class="font-semibold">Innovación:</span> Continuamente mejoramos y actualizamos nuestras herramientas para adaptarnos a las necesidades del mercado.</li>
+                    <li><span class="font-semibold">Calidad:</span> Garantizamos un alto estándar en cada aspecto de nuestro sistema.</li>
+                    <li><span class="font-semibold">Confianza:</span> Construimos relaciones sólidas con nuestros clientes basadas en la transparencia y la fiabilidad.</li>
+                    <li><span class="font-semibold">Atención:</span> Valoramos la salud de los clientes y apoyamos a los profesionales que los cuidan.</li>
+                </ul>
+            </div>
+
+            <!-- Uso Correcto del Logo -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Uso Correcto del Logotipo</h3>
+                <p class="text-gray-700 mb-6 text-lg">El logotipo debe usarse de manera consistente en todos los materiales de la marca. Asegúrese de mantener un espacio de al menos el ancho de la letra "P" alrededor del logotipo para garantizar su visibilidad y legibilidad.</p>
+                <ul class="list-disc list-inside space-y-4 text-gray-700 text-lg">
+                    <li>No alterar los colores del logotipo.</li>
+                    <li>No distorsionar o rotar el logotipo.</li>
+                    <li>No agregar efectos o sombras que puedan afectar la claridad del logotipo.</li>
+                    <li>Usar versiones del logotipo adecuadas para fondos claros y oscuros.</li>
+                </ul>
+            </div>
+
+            <!-- Uso Incorrecto del Logo -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Uso Incorrecto del Logotipo</h3>
+                <ul class="list-disc list-inside space-y-4 text-gray-700 text-lg">
+                    <li>No cambiar los colores del logotipo.</li>
+                    <li>No estirar o comprimir el logotipo.</li>
+                    <li>No agregar texto o gráficos adicionales sobre el logotipo.</li>
+                    <li>No usar el logotipo en colores que no sean los oficiales de la marca.</li>
+                    <li>No rotar el logotipo en ángulos no rectos.</li>
+                </ul>
+            </div>
+
+            <!-- Elementos Gráficos -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Elementos Gráficos</h3>
+                <p class="text-gray-700 mb-8 text-lg">Además del logotipo, nuestra marca utiliza una variedad de elementos gráficos que complementan la identidad visual de PharmaManage. Estos incluyen patrones sutiles, íconos y líneas que refuerzan nuestra presencia de marca.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Placeholder for Graphic Element 1 -->
+                    <div class="w-full h-40 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Elemento Gráfico 1</span>
+                    </div>
+                    <!-- Placeholder for Graphic Element 2 -->
+                    <div class="w-full h-40 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Elemento Gráfico 2</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aplicaciones de la Marca -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Aplicaciones de la Marca</h3>
+                <p class="text-gray-700 mb-8 text-lg">Nuestra marca se aplica de manera consistente en todos los puntos de contacto con el cliente, incluyendo materiales impresos, digitales y de producto. A continuación, se presentan ejemplos de cómo se debe utilizar la marca en diferentes contextos.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <!-- Placeholder for Application Example 1 -->
+                    <div class="w-full h-48 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Ejemplo 1</span>
+                    </div>
+                    <!-- Placeholder for Application Example 2 -->
+                    <div class="w-full h-48 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Ejemplo 2</span>
+                    </div>
+                    <!-- Placeholder for Application Example 3 -->
+                    <div class="w-full h-48 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Ejemplo 3</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Iconografía -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Iconografía</h3>
+                <p class="text-gray-700 mb-8 text-lg">Los íconos utilizados en nuestra marca deben ser simples, claros y coherentes con la estética general. Se recomienda utilizar íconos de FontAwesome para mantener la consistencia.</p>
+                <div class="flex space-x-12">
+                    <i class="fas fa-pills text-teal-500 text-4xl"></i>
+                    <i class="fas fa-heart text-red-500 text-4xl"></i>
+                    <i class="fas fa-user text-teal-500 text-4xl"></i>
+                    <i class="fas fa-capsules text-gray-600 text-4xl"></i>
+                </div>
+            </div>
+
+            <!-- Uso de Colores en Elementos UI -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Uso de Colores en Elementos UI</h3>
+                <p class="text-gray-700 mb-8 text-lg">Los colores de la marca deben aplicarse de manera estratégica en los elementos de la interfaz de usuario para guiar al usuario y resaltar acciones importantes.</p>
+                <ul class="list-disc list-inside space-y-4 text-gray-700 text-lg">
+                    <li><span class="font-semibold">Botones Primarios:</span> Utilizar Verde Primario para acciones principales como "Entrar" o "Guardar".</li>
+                    <li><span class="font-semibold">Botones Secundarios:</span> Utilizar Amarillo Secundario para acciones secundarias como "Cancelar" o "Volver".</li>
+                    <li><span class="font-semibold">Enlaces:</span> Utilizar Verde Secundario para enlaces interactivos.</li>
+                    <li><span class="font-semibold">Fondos:</span> Utilizar Gris Neutro para secciones de contenido y áreas de menor importancia.</li>
+                    <li><span class="font-semibold">Textos:</span> Utilizar Gris Neutro para textos secundarios y Verde Primario para textos destacados.</li>
+                </ul>
+            </div>
+
+            <!-- Iconos de Redes Sociales -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Iconos de Redes Sociales</h3>
+                <p class="text-gray-700 mb-8 text-lg">Nuestros iconos de redes sociales deben ser coherentes con la paleta de colores de la marca y mantenerse simples para una fácil identificación.</p>
+                <div class="flex space-x-12">
+                    <a href="#" class="text-teal-500 hover:text-teal-700 transition duration-300"><i class="fab fa-facebook-f text-4xl"></i></a>
+                    <a href="#" class="text-blue-400 hover:text-blue-600 transition duration-300"><i class="fab fa-twitter text-4xl"></i></a>
+                    <a href="#" class="text-pink-500 hover:text-pink-700 transition duration-300"><i class="fab fa-instagram text-4xl"></i></a>
+                    <a href="#" class="text-blue-700 hover:text-blue-900 transition duration-300"><i class="fab fa-linkedin-in text-4xl"></i></a>
+                    <a href="#" class="text-red-500 hover:text-red-700 transition duration-300"><i class="fas fa-envelope text-4xl"></i></a>
+                </div>
+            </div>
+
+            <!-- Materiales de Marketing -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Materiales de Marketing</h3>
+                <p class="text-gray-700 mb-8 text-lg">Los materiales de marketing, incluyendo folletos, presentaciones y anuncios, deben seguir las directrices de la marca para asegurar una presentación coherente y profesional.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Placeholder for Marketing Material 1 -->
+                    <div class="w-full h-64 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Material 1</span>
+                    </div>
+                    <!-- Placeholder for Marketing Material 2 -->
+                    <div class="w-full h-64 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Material 2</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Papelería Corporativa -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Papelería Corporativa</h3>
+                <p class="text-gray-700 mb-8 text-lg">La papelería corporativa, como tarjetas de presentación, membretes y sobres, debe incorporar el logotipo y los colores de la marca de manera consistente.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <!-- Placeholder for Corporate Stationery 1 -->
+                    <div class="w-full h-32 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Tarjeta de Presentación</span>
+                    </div>
+                    <!-- Placeholder for Corporate Stationery 2 -->
+                    <div class="w-full h-32 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Membrete</span>
+                    </div>
+                    <!-- Placeholder for Corporate Stationery 3 -->
+                    <div class="w-full h-32 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Sobre</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aplicaciones Digitales -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Aplicaciones Digitales</h3>
+                <p class="text-gray-700 mb-8 text-lg">En aplicaciones digitales como el sitio web y la aplicación de escritorio, es esencial mantener la coherencia de la marca utilizando los colores, tipografías y elementos gráficos establecidos.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Placeholder for Digital Application 1 -->
+                    <div class="w-full h-64 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Sitio Web</span>
+                    </div>
+                    <!-- Placeholder for Digital Application 2 -->
+                    <div class="w-full h-64 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Aplicación de Escritorio</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accesorios de Marca -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Accesorios de Marca</h3>
+                <p class="text-gray-700 mb-8 text-lg">Incluye elementos como bolígrafos, cuadernos y otros artículos promocionales que llevan el logotipo y los colores de la marca.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <!-- Placeholder for Brand Accessory 1 -->
+                    <div class="w-full h-40 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Bolígrafo</span>
+                    </div>
+                    <!-- Placeholder for Brand Accessory 2 -->
+                    <div class="w-full h-40 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Cuaderno</span>
+                    </div>
+                    <!-- Placeholder for Brand Accessory 3 -->
+                    <div class="w-full h-40 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Taza</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aplicaciones en Redes Sociales -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Aplicaciones en Redes Sociales</h3>
+                <p class="text-gray-700 mb-8 text-lg">Nuestra presencia en redes sociales debe reflejar la identidad de la marca, utilizando los colores, tipografías y elementos gráficos establecidos para mantener una imagen coherente.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Placeholder for Social Media Post 1 -->
+                    <div class="w-full h-32 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Publicación 1</span>
+                    </div>
+                    <!-- Placeholder for Social Media Post 2 -->
+                    <div class="w-full h-32 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Publicación 2</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Documentación Técnica -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Documentación Técnica</h3>
+                <p class="text-gray-700 mb-8 text-lg">La documentación técnica, incluyendo manuales de usuario y guías de instalación, debe seguir las directrices de la marca para asegurar claridad y profesionalismo.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Placeholder for Technical Documentation 1 -->
+                    <div class="w-full h-64 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Manual de Usuario</span>
+                    </div>
+                    <!-- Placeholder for Technical Documentation 2 -->
+                    <div class="w-full h-64 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Guía de Instalación</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Política de Marca -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Política de Marca</h3>
+                <p class="text-gray-700 mb-8 text-lg">La política de marca establece las normas y directrices para el uso correcto de todos los elementos de la marca, asegurando una representación consistente y profesional en todos los canales.</p>
+                <ul class="list-disc list-inside space-y-4 text-gray-700 text-lg">
+                    <li>Todos los materiales deben aprobarse por el departamento de marketing antes de su distribución.</li>
+                    <li>El logotipo no debe modificarse de ninguna manera.</li>
+                    <li>Se debe mantener la coherencia en el uso de colores y tipografías.</li>
+                    <li>Las imágenes deben ser de alta calidad y relevantes para la marca.</li>
+                    <li>Se debe respetar el espacio libre alrededor del logotipo para garantizar su visibilidad.</li>
+                </ul>
+            </div>
+
+            <!-- Ejemplos de Implementación -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Ejemplos de Implementación</h3>
+                <p class="text-gray-700 mb-8 text-lg">A continuación se presentan ejemplos prácticos de cómo implementar la marca PharmaManage en diferentes contextos.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Placeholder for Implementation Example 1 -->
+                    <div class="w-full h-64 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Implementación 1</span>
+                    </div>
+                    <!-- Placeholder for Implementation Example 2 -->
+                    <div class="w-full h-64 bg-gray-200 flex items-center justify-center rounded-xl shadow-inner">
+                        <span class="text-gray-500">Implementación 2</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recursos Adicionales -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Recursos Adicionales</h3>
+                <p class="text-gray-700 mb-8 text-lg">Para más información sobre el uso de la marca PharmaManage, consulte los siguientes recursos:</p>
+                <ul class="list-disc list-inside space-y-4 text-gray-700 text-lg">
+                    <li><a href="#" class="text-teal-600 hover:underline transition duration-300">Guía Completa de Marca</a></li>
+                    <li><a href="#" class="text-teal-600 hover:underline transition duration-300">Plantillas de Marketing</a></li>
+                    <li><a href="#" class="text-teal-600 hover:underline transition duration-300">Contacto de Soporte de Marca</a></li>
+                </ul>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer with Gradient -->
+    <footer class="bg-gradient-to-r from-teal-500 to-green-500">
+        <div class="container mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-white text-lg">&copy; 2024 PharmaManage. Todos los derechos reservados.</p>
+            <div class="flex space-x-8 mt-4 md:mt-0">
+                <a href="#" class="text-white hover:text-gray-200 transition duration-300"><i class="fab fa-facebook-f text-2xl"></i></a>
+                <a href="#" class="text-blue-400 hover:text-blue-600 transition duration-300"><i class="fab fa-twitter text-2xl"></i></a>
+                <a href="#" class="text-pink-500 hover:text-pink-700 transition duration-300"><i class="fab fa-instagram text-2xl"></i></a>
+                <a href="#" class="text-blue-700 hover:text-blue-900 transition duration-300"><i class="fab fa-linkedin-in text-2xl"></i></a>
+                <a href="#" class="text-red-500 hover:text-red-700 transition duration-300"><i class="fas fa-envelope text-2xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
